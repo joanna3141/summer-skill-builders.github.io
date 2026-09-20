@@ -132,3 +132,45 @@ img {
         scroll-behavior: auto !important;
     }
 }
+
+.story {
+    background-color: #f6f1e9;
+    border: 1px solid #d6cec1;
+    border-radius: 10px;
+
+    width: 100%;
+    padding: clamp(18px, 4vw, 32px);
+    margin: 24px auto;
+
+    overflow-wrap: break-word;
+}
+
+.story-title {
+    color: #352c22;
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    line-height: 1.4;
+
+    margin: 0 0 12px;
+}
+
+.story-author {
+    color: #655b4d;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.875rem;
+    font-style: italic;
+    line-height: 1.6;
+
+    margin: 0 0 20px;
+}
+
+.story-content {
+    color: #352c22;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.story-content p {
+    margin: 0 0 1.25em;
+}
