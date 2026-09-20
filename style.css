@@ -1,63 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
 
-.title {
-    color: #352c22;
-    font-family: 'Libre Baskerville', serif;
-    font-size: clamp(1.8rem, 5vw, 3rem);
-    height: 5vh;
-    margin-top: 8vh;
-    margin-bottom: 6vh;
-    font-weight: 1000;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.heading {
-    color: #352c22;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 16px;
-    height: 5vh;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 500;
+html {
+    -webkit-text-size-adjust: 100%;
 }
 
-.green {
-    background-color: #b2b691ff;
-    padding: 5px 5px;
-}
-
-.brown {
-    background-color: #d6cec1ff;
-    padding: 10px 5px;
+body {
+    margin: 0;
+    overflow-wrap: break-word;
 }
 
 .cream {
     background-color: #f1ece2ff;
     min-height: 100vh;
-    padding: 20px 5px;
+    min-height: 100dvh;
+    padding: clamp(16px, 4vw, 40px);
+    color: #352c22;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.green {
+    background-color: #b2b691ff;
+    padding: clamp(24px, 5vw, 48px) 16px;
+}
+
+.brown {
+    background-color: #d6cec1ff;
+    padding: 20px 16px;
+}
+
+.title {
+    color: #352c22;
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    line-height: 1.25;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    color: #352c22;
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(0.95rem, 2.5vw, 1.4rem);
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
 }
 
 .text {
     color: #352c22;
     font-family: 'Libre Baskerville', serif;
-    font-size: 14px;
-    font-weight: 100;
-    height: 5vh;
-    font-weight: 500;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .margin {
-    margin-top: 25px;
+    margin: clamp(16px, 3vw, 28px) auto;
 }
 
 .a {
-    padding: 5px 5px;
-    width: 310px;
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    padding: 14px 20px;
+    min-height: 44px;
     background-color: #c4c7acff;
+    color: #352c22;
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5;
+    text-align: center;
     text-decoration: none;
+    overflow-wrap: anywhere;
+    border-radius: 6px;
+}
+
+.a:hover {
+    background-color: #b2b691;
+}
+
+a:focus-visible {
+    outline: 3px solid #352c22;
+    outline-offset: 4px;
+    border-radius: 6px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.book-image {
+    width: min(300px, 100%);
+    height: auto;
+    margin: 24px auto 0;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+    .cream {
+        padding: 32px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
